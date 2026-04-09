@@ -1,8 +1,26 @@
-# Contributing to Billium
+# Engineering handbook & contribution policy
 
-Thanks for contributing. This document covers the conventions every repository under [BilliumHQ](https://github.com/BilliumHQ) follows for branching, commits, pull requests, and releases.
+This document is the source of truth for **how Billium ships code**. It serves two audiences at once:
 
-This file lives in [`BilliumHQ/.github`](https://github.com/BilliumHQ/.github) and is automatically inherited as the default `CONTRIBUTING.md` for any BilliumHQ repository that doesn't have its own. Individual repos can override any section by adding a local `CONTRIBUTING.md`.
+1. **Maintainers and the internal team.** The conventions below describe how every Billium repository is built, branched, committed, reviewed, merged, and released. Treat this as the rulebook.
+2. **External contributors.** The same conventions apply to anything that lands in our codebases — but please read **[Contribution status](#contribution-status)** below first. Billium is currently maintainer-driven and we don't actively solicit external feature work yet, so a bit of upfront coordination saves both of us time.
+
+This file lives in [`BilliumHQ/.github`](https://github.com/BilliumHQ/.github) and is automatically inherited as the default `CONTRIBUTING.md` by every BilliumHQ repository that doesn't define its own. Individual repos can override any section by adding a local `CONTRIBUTING.md`.
+
+---
+
+## Contribution status
+
+Billium is actively developed by a small core team.
+
+**Bug reports and security disclosures are always welcome.** They're how we find out something is wrong, and we'll never penalize you for telling us. Use the right channel for the kind of issue:
+
+- **Bugs** → open an issue on the affected repository ([`BilliumHQ/billium-node`](https://github.com/BilliumHQ/billium-node/issues/new/choose) for the Node SDK, etc.). See [`SUPPORT.md`](./SUPPORT.md) for guidance on what to include.
+- **Security vulnerabilities** → use the [GitHub Security Advisories form](https://github.com/BilliumHQ/billium-node/security/advisories/new) on the affected repo. See [`SECURITY.md`](./SECURITY.md) for the full disclosure policy.
+
+**Feature pull requests from external contributors are not actively solicited at this time.** If you have an idea you'd like to see in any Billium project, please **open an issue or Discussion first** to talk about it before investing time in code. We may have specific architectural, scope, or threat-model reasons why a particular feature isn't a fit, and we'd hate to ask you to throw away work after the fact. Pull requests that come in cold — without prior discussion — may take significantly longer to review, or be closed without merging if they don't align with the project's direction.
+
+This policy will relax as the project matures and we have more bandwidth for open community contributions. The conventions documented in the rest of this file are what every PR will eventually be measured against, regardless of whether it's authored internally or externally.
 
 ---
 
